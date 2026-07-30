@@ -39,6 +39,7 @@ const (
 	EventForumAuditResult      EventType = "FORUM_PUBLISH_AUDIT_RESULT"
 	EventInteractionCreate     EventType = "INTERACTION_CREATE"
 	EventGroupAtMessageCreate  EventType = "GROUP_AT_MESSAGE_CREATE"
+	EventGroupMessageCreate    EventType = "GROUP_MESSAGE_CREATE" // 群消息免艾特群消息事件创建
 	EventC2CMessageCreate      EventType = "C2C_MESSAGE_CREATE"
 	EventSubscribeMsgStatus    EventType = "SUBSCRIBE_MESSAGE_STATUS"
 	EventC2CFriendAdd          EventType = "FRIEND_ADD"
@@ -54,7 +55,7 @@ var intentEventMap = map[Intent][]EventType{
 	},
 	IntentGuildMembers:  {EventGuildMemberAdd, EventGuildMemberUpdate, EventGuildMemberRemove},
 	IntentGuildMessages: {EventMessageCreate, EventMessageDelete},
-	IntentGroupMessages: {EventGroupAtMessageCreate, EventC2CMessageCreate, EventSubscribeMsgStatus,
+	IntentGroupMessages: {EventGroupAtMessageCreate, EventGroupMessageCreate, EventC2CMessageCreate, EventSubscribeMsgStatus,
 		EventC2CFriendAdd, EventC2CFriendDel},
 
 	IntentGuildMessageReactions: {EventMessageReactionAdd, EventMessageReactionRemove},

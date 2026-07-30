@@ -33,6 +33,7 @@ var DefaultHandlers struct {
 	Interaction InteractionEventHandler
 
 	GroupATMessage     GroupATMessageEventHandler
+	GroupMessage       GroupMessageEventHandler
 	C2CMessage         C2CMessageEventHandler
 	SubscribeMsgStatus SubscribeMsgStatusEventHandler
 	C2CFriend          C2CFriendEventHandler
@@ -105,6 +106,8 @@ type InteractionEventHandler func(event *dto.WSPayload, data *dto.WSInteractionD
 
 // GroupATMessageEventHandler 群中at机器人消息事件 handler
 type GroupATMessageEventHandler func(event *dto.WSPayload, data *dto.WSGroupATMessageData) error
+
+type GroupMessageEventHandler func(event *dto.WSPayload, data *dto.WSGroupMessageData) error
 
 // C2CMessageEventHandler 机器人消息事件 handler
 type C2CMessageEventHandler func(event *dto.WSPayload, data *dto.WSC2CMessageData) error
@@ -234,6 +237,9 @@ func registerMessageHandlers(i dto.Intent, handlers ...interface{}) dto.Intent {
 		case GroupATMessageEventHandler:
 			DefaultHandlers.GroupATMessage = handle
 			i = i | dto.EventToIntent(dto.EventGroupAtMessageCreate)
+		case GroupMessageEventHandler:
+			DefaultHandlers.GroupMessage = handle
+			i = i | dto.EventToIntent(dto.EventGroupMessageCreate)
 		case C2CMessageEventHandler:
 			DefaultHandlers.C2CMessage = handle
 			i = i | dto.EventToIntent(dto.EventC2CMessageCreate)
