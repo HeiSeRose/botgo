@@ -56,11 +56,12 @@ var eventParseFuncMap = map[dto.OPCode]map[dto.EventType]eventParseFunc{
 
 		dto.EventInteractionCreate:    interactionHandler,
 		dto.EventGroupAtMessageCreate: groupAtMessageHandler,
-		dto.EventC2CMessageCreate:     c2cMessageHandler,
-		dto.EventSubscribeMsgStatus:   subscribeStatusHandler,
-		dto.EventC2CFriendAdd:         c2cFriendAddHandler,
-		dto.EventC2CFriendDel:         c2cFriendDelHandler,
-		dto.EventEnterAIO:             enterAIOHandler,
+
+		dto.EventC2CMessageCreate:   c2cMessageHandler,
+		dto.EventSubscribeMsgStatus: subscribeStatusHandler,
+		dto.EventC2CFriendAdd:       c2cFriendAddHandler,
+		dto.EventC2CFriendDel:       c2cFriendDelHandler,
+		dto.EventEnterAIO:           enterAIOHandler,
 	},
 }
 
