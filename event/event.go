@@ -55,14 +55,13 @@ var eventParseFuncMap = map[dto.OPCode]map[dto.EventType]eventParseFunc{
 		dto.EventForumAuditResult:  forumAuditHandler,
 
 		dto.EventInteractionCreate:    interactionHandler,
-		dto.EventGroupAtMessageCreate: groupAtMessageHandler, // 群消息事件 AT 事件
-		dto.EventGroupMessageCreate:   groupMessageHandler,   // 群消息事件创建
-
-		dto.EventC2CMessageCreate:   c2cMessageHandler,
-		dto.EventSubscribeMsgStatus: subscribeStatusHandler,
-		dto.EventC2CFriendAdd:       c2cFriendAddHandler,
-		dto.EventC2CFriendDel:       c2cFriendDelHandler,
-		dto.EventEnterAIO:           enterAIOHandler,
+		dto.EventGroupAtMessageCreate: groupAtMessageHandler,
+		dto.EventGroupMessageCreate:   groupMessageHandler,
+		dto.EventC2CMessageCreate:     c2cMessageHandler,
+		dto.EventSubscribeMsgStatus:   subscribeStatusHandler,
+		dto.EventC2CFriendAdd:         c2cFriendAddHandler,
+		dto.EventC2CFriendDel:         c2cFriendDelHandler,
+		dto.EventEnterAIO:             enterAIOHandler,
 	},
 }
 
