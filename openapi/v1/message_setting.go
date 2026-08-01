@@ -3,7 +3,7 @@ package v1
 import (
 	"context"
 
-	"github.com/tencent-connect/botgo/dto"
+	"github.com/HeiSeRose/botgo/dto"
 )
 
 // GetMessageSetting 获取频道消息频率设置信息

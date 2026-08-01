@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/interaction/signature"
-	"github.com/tencent-connect/botgo/log"
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/interaction/signature"
+	"github.com/HeiSeRose/botgo/log"
 )
 
 const maxRespBuffer = 65535

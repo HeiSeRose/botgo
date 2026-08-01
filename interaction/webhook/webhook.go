@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/tencent-connect/botgo/constant"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/event"
-	"github.com/tencent-connect/botgo/interaction/signature"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/token"
+	"github.com/HeiSeRose/botgo/constant"
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/event"
+	"github.com/HeiSeRose/botgo/interaction/signature"
+	"github.com/HeiSeRose/botgo/log"
+	"github.com/HeiSeRose/botgo/token"
 )
 
 type ack struct {

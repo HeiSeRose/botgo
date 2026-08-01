@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/sessions/manager"
-	"github.com/tencent-connect/botgo/websocket"
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/log"
+	"github.com/HeiSeRose/botgo/sessions/manager"
+	"github.com/HeiSeRose/botgo/websocket"
 	"golang.org/x/oauth2"
 )
 

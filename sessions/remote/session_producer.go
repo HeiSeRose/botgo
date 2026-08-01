@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/log"
 	"golang.org/x/oauth2"
 )
 

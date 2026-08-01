@@ -2,11 +2,11 @@
 package botgo
 
 import (
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/openapi"
-	v1 "github.com/tencent-connect/botgo/openapi/v1"
-	"github.com/tencent-connect/botgo/websocket/client"
+	"github.com/HeiSeRose/botgo/errs"
+	"github.com/HeiSeRose/botgo/log"
+	"github.com/HeiSeRose/botgo/openapi"
+	v1 "github.com/HeiSeRose/botgo/openapi/v1"
+	"github.com/HeiSeRose/botgo/websocket/client"
 	"golang.org/x/oauth2"
 )
 

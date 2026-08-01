@@ -2,8 +2,8 @@
 
 QQ频道机器人，官方 GOLANG SDK。
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/tencent-connect/botgo.svg)](https://pkg.go.dev/github.com/tencent-connect/botgo)
-[![Examples](https://img.shields.io/badge/BotGo-examples-yellowgreen)](https://github.com/tencent-connect/botgo/tree/master/examples)
+[![Go Reference](https://pkg.go.dev/badge/github.com/HeiSeRose/botgo.svg)](https://pkg.go.dev/github.com/HeiSeRose/botgo)
+[![Examples](https://img.shields.io/badge/BotGo-examples-yellowgreen)](https://github.com/HeiSeRose/botgo/tree/master/examples)
 
 ## 注意事项
 1. websocket 事件推送链路将在24年年底前逐步下线，后续官方不再维护。

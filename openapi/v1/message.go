@@ -9,9 +9,9 @@ import (
 	"github.com/go-resty/resty/v2"
 	"github.com/tidwall/gjson"
 
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/openapi/options"
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/errs"
+	"github.com/HeiSeRose/botgo/openapi/options"
 )
 
 // Message 拉取单条消息

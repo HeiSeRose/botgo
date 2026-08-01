@@ -9,12 +9,12 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/HeiSeRose/botgo/constant"
+	"github.com/HeiSeRose/botgo/errs"
+	"github.com/HeiSeRose/botgo/log"
+	"github.com/HeiSeRose/botgo/openapi"
+	"github.com/HeiSeRose/botgo/version"
 	"github.com/go-resty/resty/v2" // resty 是一个优秀的 rest api 客户端，可以极大的减少开发基于 rest 标准接口求请求的封装工作量
-	"github.com/tencent-connect/botgo/constant"
-	"github.com/tencent-connect/botgo/errs"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/openapi"
-	"github.com/tencent-connect/botgo/version"
 	"golang.org/x/oauth2"
 )
 

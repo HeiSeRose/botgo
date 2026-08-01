@@ -7,14 +7,14 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/HeiSeRose/botgo/dto"
+	"github.com/HeiSeRose/botgo/log"
+	"github.com/HeiSeRose/botgo/sessions/manager"
+	"github.com/HeiSeRose/botgo/sessions/remote/lock"
+	"github.com/HeiSeRose/botgo/token"
+	"github.com/HeiSeRose/botgo/websocket"
 	"github.com/go-redis/redis/v8"
 	"github.com/google/uuid"
-	"github.com/tencent-connect/botgo/dto"
-	"github.com/tencent-connect/botgo/log"
-	"github.com/tencent-connect/botgo/sessions/manager"
-	"github.com/tencent-connect/botgo/sessions/remote/lock"
-	"github.com/tencent-connect/botgo/token"
-	"github.com/tencent-connect/botgo/websocket"
 	"golang.org/x/oauth2"
 )
 

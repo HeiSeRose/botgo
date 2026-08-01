@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tencent-connect/botgo/constant"
-	"github.com/tencent-connect/botgo/log"
+	"github.com/HeiSeRose/botgo/constant"
+	"github.com/HeiSeRose/botgo/log"
 	"golang.org/x/oauth2"
 	"golang.org/x/sync/singleflight"
 )
